@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+	<div class="topnav">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact Us</a>
+</div>
+
+<div class="content" style=text-align:center>
+  <h2>Welcome, please login...</h2>
+  <p id="alert"></p>
+	  <form action="javascript:authorizePerson();" id="loginform" name="loginform" onsubmit="return validatePerson()">
+	  Login Id:<br>
+	  <input type="text" name="loginid" placeholder="login id">
+	  <br><br>
+	  Password:<br>
+	  <input type="password" name="password" placeholder="password">
+	  <br><br>
+	  User Type:<br>
+	  <select name="user">
+		  <option value="member">Member</option>
+		  <option value="admin">Admin</option>
+	  </select>
+	  <br><br>
+	  <input id="btn" type="submit" name="btn-login" value="Login">
+	</form> 
+</div>
+<div class="footer" style=text-align:center>
+  <p>Copyright @Something</p>
+</div>
+
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script src="../js/scripts.js"></script>
+</body>
+</html>
