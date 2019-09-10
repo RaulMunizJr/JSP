@@ -1,0 +1,7 @@
+create table tbl_booking (booking_id int not null, customer_name varchar2(20) not null,
+license_no varchar(20) not null, vehicle_make varchar2(20) not null,
+proposed_date date not null,
+CONSTRAINT booking_pk PRIMARY KEY (booking_id));
+
+insert into tbl_booking (booking_id, customer_name, license_no, vehicle_make, proposed_date)
+values (101, 'Raul', 'licenseno1', 'safari', to_date('10/09/2019','DD/MM/YYYY'));
